@@ -6,6 +6,7 @@
 build/
 
 # Generated files
+/lib/**/*.route.dart
 /lib/**/*.freezed.dart
 /lib/**/*.g.dart
 
