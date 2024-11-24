@@ -1,0 +1,21 @@
+# Files and directories created by pub.
+.dart_tool/
+.packages
+
+# Conventional directory for build output.
+build/
+
+# Generated files
+/lib/**/*.freezed.dart
+/lib/**/*.g.dart
+
+# IntelliJ
+*.iml
+.idea/*
+
+#VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
