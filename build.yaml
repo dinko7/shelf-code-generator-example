@@ -1,5 +1,5 @@
 builders:
-  shelf_code_generator_example|shelf_route_builder:  # Changed to include package name
+  shelf_code_generator_example|shelf_route_builder:
     import: "lib/builder.dart"
     builder_factories: ["shelfRouteBuilder"]
     build_extensions: {".dart": [".route.dart"]}
@@ -10,7 +10,7 @@ builders:
 targets:
   $default:
     builders:
-      shelf_code_generator_example|shelf_route_builder:  # Match the builder name here
+      shelf_code_generator_example|shelf_route_builder:
         enabled: true
         generate_for:
           - lib/**/*.dart
