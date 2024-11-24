@@ -1,7 +1,6 @@
 import 'package:build/build.dart';
+import 'package:shelf_code_generator_example/generator/generator.dart';
 import 'package:source_gen/source_gen.dart';
-
-import 'generator/generator.dart'; // Changed to relative import
 
 Builder shelfRouteBuilder(BuilderOptions options) => PartBuilder(
       [RouteGenerator()],
