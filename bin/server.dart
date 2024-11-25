@@ -8,9 +8,8 @@ void main(List<String> args) async {
   final controller = UserController();
   final router = UserControllerRouter(controller);
 
-  final handler = Pipeline().addMiddleware(logRequests(logger: (msg, isError) {
-    print('${isError ? 'ERROR: ' : ''}$msg');
-  })).addHandler(router.handler);
+  final handler =
+      Pipeline().addMiddleware(logRequests()).addHandler(router.handler);
 
   final ip = InternetAddress.anyIPv4;
   final port = int.parse(Platform.environment['PORT'] ?? '8080');

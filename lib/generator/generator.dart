@@ -101,7 +101,7 @@ class ${className}Router {
         if (const TypeChecker.fromRuntime(Body).hasAnnotationOf(param)) {
           bodyParam = _BodyParameter(
             name: param.name,
-            type: param.type.getDisplayString(withNullability: true),
+            type: param.type.getDisplayString(),
           );
         }
       }
